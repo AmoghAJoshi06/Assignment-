@@ -22,6 +22,59 @@ Problem Faced in this.
      To create the environment is **"sudo apt install -y python3-venv python3-full"** to crate **"python3 -m venv venv"** and to activate it **"source venv/bin/activate"** at last to deactivate use the same command **"deactivate"**
 
 
+Task 02: Dockerize Both Components
+ * Write a Dockerfile for the backend
+ * Write a Dockerfile for the frontend.
+ * Write a docker-compose.yml that:
+     -Runs both containers
+     -Frontend on port 8080
+     -Backend on port 5000
+     -Frontend calls backend using service name (not localhost)
+
+Steps are followed for this 
+
+    Step 1: Create a instance for the docker 
+    Step 2: Next update the instance - "sudo apt update"
+    Step 3: exit the instance and again login to it
+    Step 4: Next install Docker file - 
+    **sudo apt install -y docker.io
+    sudo systemctl enable docker
+    sudo systemctl start docker
+    sudo usermod -aG docker ubuntu**
+    Step 5: Next install docker compose **sudo apt install -y docker-compose**
+    Step 6: Create the directory as project next go to into that directory and create a another directory into it backend and frontend
+    Step 7: Create the backend called as app.py - **vim backend/app.py** and write the code save and exit
+    Step 8: Create a requrinmentfor the backend that is the flask : **vim backend/ requriment.py**
+    Step 9: Next create a backend Dockerfile to it - **vim backend/Dockerfile**
+    Step 10: After the backend is done come to the frontend part of the docker file 
+    Step 11: For the frontend i have used as index.html : **vim frontend/index.html** . In that write the code and save and exit from it
+    Step 12: Next create a Dockerfile for it - **vim frontend/Dockerfile**
+
+Problems 
+
+    I could write the backend full script for the docker file 
+    I have written only few line of the front of the index.html
+    I could written the frontend Docker-file 
+    I got the errors when downloding the Docker-File into my system 
+
+
+Task 03: Deploy on AWS EC2
+ * Launch a t2.micro Ubuntu EC2 instance.
+ * Install Docker and Docker Compose
+ * Clone your project and run using docker-compose.
+ * Open port 8080 in the security group
+ * Verify
+     - Frontend loads in browser
+     - Backend works through the frontend
+
+
+   Step are followed
+
+       Step 1: Create a instance by using EC2
+       Step 2: In the instance link to the ubuntu server and in that downloaded Docker into
+       
+    
+
 
 
     
