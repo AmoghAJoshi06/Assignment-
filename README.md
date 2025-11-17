@@ -4,27 +4,24 @@ Task 01 : To create a web page.
 
    Steps are followed for this 
 
-    Step 1 : Create a Instance for this from the AWS EC2 and connect with SSH  
-    Step 2 : After connecting with SSH do update the system by updating the system by using the command **" sudo apt-get update"**
-    Step 3: For the backend I am using Python with the flask to do the web page backend. 
-    Step 4: For runing the SSH go to folder where we have saved the key to create the instance and loacte it come back to instance and click on coonect then go to the SSH client there we will get the link like this** " ssh -i "Devops.pem" ubuntu@ec2-16-171-64-192.eu-north-1.compute.amazonaws.com"**. 
-    Step 5: Copy the link and Paste in the command Terminal where the key is locate after we get the ubuntu server in it 
-    Step 6: Again i have checked for any updates and I have start to install mu Python and with its Pip version in my ubuntu setup
-    Step 7: I have used the command sudo apt update, **"sudo apt install python3 python3-pip -y"** i have done in ame time I have updated and installed the python wit its pip
-    Step 8: After the installing the Python and Pip i have check the version of the Pip by commmand pip3 --version
-    Step 9: After that I have Installed Flask into it by command **"pip install flask"** 
-    Step 10: After that write the command nano app.py where it create the small file to write the code for the webpage 
-    Step 11: After that writing the come back by using crlt+o to save and crlt + x to exit 
-    Step 12 : Open a new tab in the tab open Your web page like this **"http:// Public IP address: 5000" and you can see your output**
+    Step1: Create a new instance in EC2 system and connect with the SSH system in your PC by locating the Key of that instance open the terminal where the key is present and paste this **"ssh -i "Devops.pem" ubuntu@ec2-13-49-245-252.eu-north-1.compute.amazonaws.com"**
+    Step 2: Ater that the ubuntu will be showed then check for the update in by **"sudo apt-get update"**
+    Step 3: Afetr the updation her i am using the python for my backend of my web development download the Python into it by the command **"sudo apt install python3 python3-pip-y"**
+    Step 4: After installing check for the pip version by using **"pip3 --version"**
+    Step 5: Next download the flask version into it command **"pip install flask"**
+    Step 4: Create a file by using the vim like i have used **vim backend.py**
+    Step 5: After writing the code in the backend.py check it by using **"python3 backend.py"**
+    Step 6: Next come to the Frontend of the web page here make a another file as index.html command: **"vim index.html"**
+    Step 7: In that write the HTML code for the program and run it by using **"python3 -m http.server 8080"**
+    Step 8: And then check in the web page wheather programming is running in your public id 
+
+Problem Faced in this.
+
+     First you have to make sure everytime who check wheather I have python and pip in it 
+     Next is that we can't run the flask directly into it as we have to create a new environment to it and then download the flask in it or it will give error 
+     To create the environment is **"sudo apt install -y python3-venv python3-full"** to crate **"python3 -m venv venv"** and to activate it **"source venv/bin/activate"** at last to deactivate use the same command **"deactivate"**
+
+
+
+
     
-Problems That when doing this 
-    1. we can't directly download the flask directly after installing the python in the ubuntu, As we have to cerate a env to do it the command i used to do the env for my server was 
-    First install the env the command : **"sudo apt install python3-venv -y"**
-    Second create that env in the ubuntu command : **"python3 -m venv myenv"**
-    Next activate that env command : **"source myenv/bin/activate"**
-    Aftr that we can install the flask 
-    For the decative the env command : **"deactivate"**
-
- 
-
-
